@@ -14,7 +14,9 @@ export const Wrapper = styled.div`
   margin-inline: auto;
 
   a {
+    color: ${({ theme }) => theme.colors.white};
     transition: all 300ms ease-in-out;
+    text-shadow: 0.4rem 0.3rem 0.5rem rgba(0,0,0,0.9);
 
     &:hover {
       transform: scale(1.125);
