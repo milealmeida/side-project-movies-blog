@@ -3,9 +3,13 @@ import { FiClock } from 'react-icons/fi';
 
 import { Box, Container } from './styles';
 
-export const Author = () => (
+type Props = {
+  black?: boolean;
+};
+
+export const Author = ({ black }: Props) => (
   <Container>
-    <Box>
+    <Box black={black}>
       <Image
         src="https://github.com/milealmeida.png"
         alt="Foto da Milena Almeida"
@@ -15,7 +19,7 @@ export const Author = () => (
       <strong>Milena Almeida</strong>
     </Box>
 
-    <Box>
+    <Box black={black}>
       <FiClock size={15} />
       <strong>20 de abril, 2023</strong>
     </Box>

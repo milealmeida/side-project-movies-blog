@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Banner, Menu, Recents } from 'components';
+import { Banner, Menu, Posts, Recents } from 'components';
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
         <Menu />
         <Banner />
         <Recents />
+        <Posts />
       </main>
     </>
   );
