@@ -4,6 +4,10 @@ export const Section = styled.section`
   width: 100%;
   background-color: #474a51;
   padding: 4rem;
+
+  @media (max-width: 800px) {
+    padding-inline: 2rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -18,6 +22,10 @@ export const Cards = styled.div`
   display: flex;
   margin-inline: auto;
   gap: 4rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const Card = styled.div<{bg: string}>`

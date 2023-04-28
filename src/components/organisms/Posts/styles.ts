@@ -3,6 +3,11 @@ import styled from 'styled-components';
 export const Section = styled.section`
   max-width: 120rem;
   margin: 80rem auto 10rem;
+
+  @media (max-width: 800px) {
+    margin-top: 155rem;
+    padding-inline: 2rem;
+  }
 `;
 
 export const Box = styled.div`

@@ -7,6 +7,10 @@ export const Section = styled.section`
   width: 100%;
   height: 60rem;
   z-index: -1;
+
+  @media (max-width: 800px) {
+    padding-inline: 2rem;
+  }
 `;
 
 export const Background = styled.div`
@@ -35,4 +39,9 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.black};
   font-size: 4rem;
   text-transform: capitalize;
+
+  @media (max-width: 800px) {
+    max-width: 30rem;
+    font-size: 3rem;
+  }
 `;

@@ -11,6 +11,10 @@ export const Container = styled.div`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const Box = styled.div`

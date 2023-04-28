@@ -4,6 +4,10 @@ export const Container = styled.footer`
   width: 100%;
   background-color: ${({ theme }) => theme.colors.gray[800]};
   padding-block: 10rem;
+
+  @media (max-width: 800px) {
+    padding-inline: 2rem;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -21,6 +25,10 @@ export const Wrapper = styled.div`
     &:hover {
       transform: scale(1.1);
     }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
   }
 `;
 

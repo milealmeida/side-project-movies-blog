@@ -4,6 +4,10 @@ export const Header = styled.header`
   width: 100%;
   padding: 2rem 1rem;
   background-color: transparent;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const Wrapper = styled.div`

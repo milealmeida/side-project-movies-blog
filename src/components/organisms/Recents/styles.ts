@@ -4,6 +4,11 @@ export const Section = styled.section`
   position: absolute;
   top: 45rem;
   width: 100%;
+
+  @media (max-width: 800px) {
+    padding-inline: 2rem;
+    top: 40rem;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -14,6 +19,10 @@ export const Wrapper = styled.div`
 export const Cards = styled.div`
   display: flex;
   gap: 4rem;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 export const Card = styled.div<{bg: string}>`
