@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  background-color: ${({ theme }) => theme.colors.black};
-  padding: 10rem;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.gray[800]};
+  padding-block: 10rem;
 `;
 
 export const Wrapper = styled.div`
@@ -12,7 +13,15 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding-bottom: 8rem;
-  border-bottom: 0.1rem solid ${({ theme }) => theme.colors.white}
+  border-bottom: 0.1rem solid ${({ theme }) => theme.colors.white};
+  
+  a {
+    transition: all 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `;
 
 export const Box = styled.div`
@@ -22,20 +31,18 @@ export const Box = styled.div`
   a {
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.6rem;
-    transition: all 300ms;
 
     &:hover {
-      transform: scale(1.1);
       font-weight: 700;
     }
   }
 `;
 
 export const Copyright = styled.p`
-    color: ${({ theme }) => theme.colors.white};
-    font-size: 1.6rem;
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 1.6rem;
 
-    strong {
-      margin-left: 1rem;
-    }
+  strong {
+    margin-left: 1rem;
+  }
 `;

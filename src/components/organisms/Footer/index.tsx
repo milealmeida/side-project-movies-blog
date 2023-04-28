@@ -1,11 +1,15 @@
-import { Logo } from 'components/atoms/Logo';
-import { Container, Copyright, Wrapper, Box } from './styles';
 import Link from 'next/link';
+
+import { Logo } from 'components/atoms/Logo';
+
+import { Container, Copyright, Wrapper, Box } from './styles';
 
 export const Footer = () => (
   <Container>
     <Wrapper>
-      <Logo />
+      <Link href='/'>
+        <Logo />
+      </Link>
 
       <Box>
         <Link href="/">Home</Link>
