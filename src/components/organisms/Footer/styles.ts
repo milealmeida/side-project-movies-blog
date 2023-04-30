@@ -6,7 +6,7 @@ export const Container = styled.footer`
   padding-block: 10rem;
 
   @media (max-width: 800px) {
-    padding-inline: 2rem;
+    padding: 5rem 2rem;
   }
 `;
 
@@ -29,6 +29,8 @@ export const Wrapper = styled.div`
 
   @media (max-width: 800px) {
     flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 5rem;
   }
 `;
 
@@ -44,13 +46,23 @@ export const Box = styled.div`
       font-weight: 700;
     }
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
 `;
 
-export const Copyright = styled.p`
+export const Copyright = styled.div`
+  display: flex;
+  gap: 1rem;
   color: ${({ theme }) => theme.colors.white};
   font-size: 1.6rem;
 
-  strong {
-    margin-left: 1rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
   }
 `;

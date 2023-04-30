@@ -18,7 +18,7 @@ export const Footer = () => (
       </Box>
 
       <Copyright>
-        Copyright© 2023 Popcorn Time.
+        <p>Copyright© 2023 Popcorn Time.</p>
         <strong>Todos os direitos reservados.</strong>
       </Copyright>
     </Wrapper>
