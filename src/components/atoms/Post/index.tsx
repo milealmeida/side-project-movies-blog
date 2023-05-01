@@ -3,11 +3,18 @@ import Image from 'next/image';
 import { Author } from '../Author';
 import { Badge } from '../Badge';
 
-import { Container, Box, Title } from './styles';
+import { Container, ImageContainer, Box, Title } from './styles';
 
 export const Post = () => (
   <Container>
-    <Image src="/img/bg.jpg" alt="Alt cinema" width={150} height={150} />
+    <ImageContainer>
+      <Image
+        src="/img/bg.jpg"
+        alt="Alt cinema"
+        fill
+        style={{ objectFit: 'cover' }}
+      />
+    </ImageContainer>
 
     <Box>
       <Badge />

@@ -37,6 +37,10 @@ export const Card = styled.div<{bg: string}>`
   justify-content: flex-end;
   padding: 25rem 4rem 4rem;
   cursor: pointer;
+
+  @media (max-width: 800px) {
+    padding:  8rem 2rem 2rem;
+  }
 `;
 
 export const CardTitle = styled.h2`

@@ -5,7 +5,7 @@ export const Section = styled.section`
   margin: 80rem auto 10rem;
 
   @media (max-width: 800px) {
-    margin-top: 155rem;
+    margin-top: 120rem;
     padding-inline: 2rem;
   }
 `;
@@ -15,8 +15,17 @@ export const Box = styled.div`
   flex-wrap: wrap;
   gap: 4rem 10rem;
   margin-top: 4rem;
+
+  @media (max-width: 800px) {
+    gap: 8rem;
+    justify-content: center;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 3rem;
+
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 `;

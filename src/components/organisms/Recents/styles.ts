@@ -22,6 +22,7 @@ export const Cards = styled.div`
 
   @media (max-width: 800px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -41,6 +42,11 @@ export const Card = styled.div<{bg: string}>`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: 800px) {
+    padding: 2rem;
+    gap: 4rem;
+  }
 `;
 
 export const Box = styled.div`
@@ -53,4 +59,9 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   font-size: 2.4rem;
   height: 9rem;
+
+  @media (max-width: 800px) {
+    font-size: 2rem;
+    height: 5rem;
+  }
 `;

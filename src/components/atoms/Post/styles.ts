@@ -17,6 +17,17 @@ export const Container = styled.div`
   }
 `;
 
+export const ImageContainer = styled.div`
+  position: relative;
+  width: 20rem;
+  height: 100%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 15rem;
+  }
+`;
+
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
