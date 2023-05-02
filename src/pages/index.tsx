@@ -13,10 +13,10 @@ export default function Home() {
 
       <main>
         <Menu />
-        <Banner />
+        <Banner id="home" />
         <Recents />
-        <Posts />
-        <Lists />
+        <Posts id="posts" />
+        <Lists id="lists" />
         <Footer />
       </main>
     </>

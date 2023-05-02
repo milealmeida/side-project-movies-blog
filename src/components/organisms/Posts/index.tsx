@@ -3,8 +3,12 @@ import { Post } from '../../atoms/Post';
 import { content } from './content';
 import { Section, Box, Title } from './styles';
 
-export const Posts = () => (
-  <Section>
+type Props = {
+  id: string;
+};
+
+export const Posts = ({ id }: Props) => (
+  <Section id={id}>
     <Title>Nossas Postagens</Title>
 
     <Box>

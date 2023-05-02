@@ -11,8 +11,8 @@ export const Menu = () => (
 
       <Nav>
         <Link href="/">Home</Link>
-        <Link href="/">Guias</Link>
-        <Link href="/">Posts</Link>
+        <Link href="#posts">Posts</Link>
+        <Link href="#lists">Lists</Link>
       </Nav>
     </Wrapper>
   </Header>

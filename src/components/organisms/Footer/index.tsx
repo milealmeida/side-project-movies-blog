@@ -13,13 +13,13 @@ export const Footer = () => (
 
       <Box>
         <Link href="/">Home</Link>
-        <Link href="#posts">Postagens</Link>
-        <Link href="#lists">Listas</Link>
+        <Link href="#posts">Posts</Link>
+        <Link href="#lists">Lists</Link>
       </Box>
 
       <Copyright>
-        <p>Copyright© 2023 Popcorn Time.</p>
-        <strong>Todos os direitos reservados.</strong>
+        <p>Copyright© 2023 Movie Time.</p>
+        <strong>All rights reserved.</strong>
       </Copyright>
     </Wrapper>
   </Container>

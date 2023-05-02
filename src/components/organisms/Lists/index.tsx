@@ -3,8 +3,12 @@ import { content } from './content';
 import { Card, CardTitle, Cards, Section, Title } from './styles';
 import { Author } from 'components/atoms/Author';
 
-export const Lists = () => (
-  <Section>
+type Props = {
+  id: string;
+};
+
+export const Lists = ({ id }: Props) => (
+  <Section id={id}>
     <Title>Listas</Title>
 
     <Cards>
