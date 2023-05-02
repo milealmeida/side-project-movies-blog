@@ -10,11 +10,15 @@ export const Recents = () => (
       <Cards>
         {content.map(item => (
           <Card key={item.id} bg={item.image}>
-            <Badge />
+            <Badge type={item.badge} />
 
             <Box>
               <Title>{item.title}</Title>
-              <Author />
+              <Author
+                src={item.author.image}
+                name={item.author.name}
+                date={item.author.date}
+              />
             </Box>
           </Card>
         ))}

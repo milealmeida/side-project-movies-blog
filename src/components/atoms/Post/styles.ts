@@ -7,6 +7,7 @@ export const Container = styled.div`
   max-width: 50rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  width: 100%;
 
   &:hover {
     transform: scale(1.05);
@@ -17,9 +18,9 @@ export const Container = styled.div`
   }
 `;
 
-export const ImageContainer = styled.div`
-  position: relative;
-  width: 20rem;
+export const Image = styled.img`
+  object-fit: cover;
+  width: 13rem;
   height: 100%;
 
   @media (max-width: 800px) {

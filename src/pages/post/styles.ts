@@ -24,6 +24,11 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   font-size: 4rem;
   margin-block: 4rem;
+
+  @media (max-width: 800px) {
+    font-size: 2.6rem;
+    margin-block: 2rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -52,5 +57,9 @@ export const Content = styled.div`
   span {
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.4rem;
+  }
+
+  @media (max-width: 1250px) {
+    padding-inline: 2rem;
   }
 `;

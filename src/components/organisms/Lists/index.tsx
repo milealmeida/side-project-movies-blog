@@ -10,9 +10,13 @@ export const Lists = () => (
     <Cards>
       {content.map(item => (
         <Card key={item.id} bg={item.image}>
-          <Badge />
+          <Badge type={item.badge} />
           <CardTitle>{item.title}</CardTitle>
-          <Author />
+          <Author
+            date={item.author.date}
+            name={item.author.name}
+            src={item.author.image}
+          />
         </Card>
       ))}
     </Cards>

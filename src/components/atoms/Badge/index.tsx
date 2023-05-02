@@ -1,7 +1,11 @@
 import { Wrapper } from './styles';
 
-export const Badge = () => (
+type Props = {
+  type: string
+};
+
+export const Badge = ({ type }: Props) => (
   <Wrapper>
-    health
+    {type}
   </Wrapper>
 );

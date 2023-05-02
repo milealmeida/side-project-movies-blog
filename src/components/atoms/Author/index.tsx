@@ -5,23 +5,31 @@ import { Box, Container } from './styles';
 
 type Props = {
   black?: boolean;
+  src: string;
+  name: string;
+  date: string;
 };
 
-export const Author = ({ black }: Props) => (
+export const Author = ({
+  black, 
+  src, 
+  name, 
+  date,
+}: Props) => (
   <Container>
     <Box black={black}>
       <Image
-        src="https://github.com/milealmeida.png"
-        alt="Foto da Milena Almeida"
+        src={src}
+        alt={`Foto de perfil ${name}`}
         width={25}
         height={25}
       />
-      <strong>Milena Almeida</strong>
+      <strong>{name}</strong>
     </Box>
 
     <Box black={black}>
       <FiClock size={15} />
-      <strong>20 de abril, 2023</strong>
+      <strong>{date}</strong>
     </Box>
   </Container>
 );

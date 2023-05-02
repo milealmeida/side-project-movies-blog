@@ -1,25 +1,42 @@
-import Image from 'next/image';
-
 import { Author } from '../Author';
 import { Badge } from '../Badge';
 
-import { Container, ImageContainer, Box, Title } from './styles';
+import { Container, Image, Box, Title } from './styles';
 
-export const Post = () => (
+type Props = {
+  src: string;
+  alt: string;
+  title: string;
+  badge: string;
+  author: {
+    name: string;
+    image: string;
+    date: string;
+  }
+};
+
+export const Post = ({
+  src,
+  alt,
+  title,
+  badge,
+  author,
+}: Props) => (
   <Container>
-    <ImageContainer>
-      <Image
-        src="/img/bg.jpg"
-        alt="Alt cinema"
-        fill
-        style={{ objectFit: 'cover' }}
-      />
-    </ImageContainer>
+    <Image
+      src={src}
+      alt={alt}
+    />
 
     <Box>
-      <Badge />
-      <Title>every photographer needs time to shoot this photo</Title>
-      <Author black />
+      <Badge type={badge}/>
+      <Title>{title}</Title>
+      <Author
+        black 
+        date={author.date}
+        name={author.name}
+        src={author.image}
+      />
     </Box>
   </Container>
 );
