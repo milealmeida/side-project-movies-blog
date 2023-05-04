@@ -9,7 +9,7 @@ type Props = {
 
 export const Lists = ({ id }: Props) => (
   <Section id={id}>
-    <Title>Listas</Title>
+    <Title>Lists</Title>
 
     <Cards>
       {content.map(item => (
