@@ -4,8 +4,10 @@ type Props = {
   type: string
 };
 
-export const Badge = ({ type }: Props) => (
-  <Wrapper>
-    {type}
-  </Wrapper>
-);
+export function Badge({ type }: Props) {
+  return (
+    <Wrapper>
+      {type}
+    </Wrapper>
+  );
+}

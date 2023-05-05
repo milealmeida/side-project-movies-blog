@@ -29,7 +29,7 @@ export const Cards = styled.div`
 `;
 
 export const Card = styled.div<{bg: string}>`
-  background: url(${({bg}) => bg}) no-repeat center;
+  background: url(${({ bg }) => bg}) no-repeat center;
   background-size: cover;
   width: 100%;
   display: flex;

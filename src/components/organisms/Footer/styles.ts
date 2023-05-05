@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
   align-items: center;
   padding-bottom: 8rem;
   border-bottom: 0.1rem solid ${({ theme }) => theme.colors.white};
-  
+
   a {
     transition: all 300ms;
 

@@ -8,7 +8,7 @@ export const content = [
     author: {
       name: 'Milena Almeida',
       image: 'https://github.com/milealmeida.png',
-      date: '20 de maio, 2023'
+      date: '20 de maio, 2023',
     },
   },
   {
@@ -20,7 +20,7 @@ export const content = [
     author: {
       name: 'Mayk Brito',
       image: 'https://github.com/maykbrito.png',
-      date: '15 de maio, 2023'
+      date: '15 de maio, 2023',
     },
   },
   {
@@ -32,7 +32,7 @@ export const content = [
     author: {
       name: 'Mateus Silva',
       image: 'https://github.com/maateusilva.png',
-      date: '10 de maio, 2023'
+      date: '10 de maio, 2023',
     },
   },
   {
@@ -44,7 +44,7 @@ export const content = [
     author: {
       name: 'Mateus Silva',
       image: 'https://github.com/maateusilva.png',
-      date: '10 de maio, 2023'
+      date: '10 de maio, 2023',
     },
   },
 ];

@@ -1,6 +1,8 @@
 import Head from 'next/head';
 
-import { Banner, Footer, Lists, Menu, Posts, Recents } from 'components';
+import {
+  Banner, Footer, Lists, Menu, Posts, Recents,
+} from 'components';
 
 export default function Home() {
   return (

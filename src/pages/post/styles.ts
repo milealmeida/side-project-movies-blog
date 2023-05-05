@@ -53,7 +53,7 @@ export const Content = styled.div`
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.6rem;
   }
-  
+
   span {
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.4rem;

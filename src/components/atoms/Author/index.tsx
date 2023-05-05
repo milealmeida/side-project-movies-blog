@@ -10,26 +10,28 @@ type Props = {
   date: string;
 };
 
-export const Author = ({
-  black, 
-  src, 
-  name, 
+export function Author({
+  black,
+  src,
+  name,
   date,
-}: Props) => (
-  <Container>
-    <Box black={black}>
-      <Image
-        src={src}
-        alt={`Foto de perfil ${name}`}
-        width={25}
-        height={25}
-      />
-      <strong>{name}</strong>
-    </Box>
+}: Props) {
+  return (
+    <Container>
+      <Box black={black}>
+        <Image
+          src={src}
+          alt={`Foto de perfil ${name}`}
+          width={25}
+          height={25}
+        />
+        <strong>{name}</strong>
+      </Box>
 
-    <Box black={black}>
-      <FiClock size={15} />
-      <strong>{date}</strong>
-    </Box>
-  </Container>
-);
+      <Box black={black}>
+        <FiClock size={15} />
+        <strong>{date}</strong>
+      </Box>
+    </Container>
+  );
+}

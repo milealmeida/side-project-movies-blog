@@ -11,7 +11,7 @@ export const Box = styled.div<{ black?: boolean }>`
   align-items: center;
   gap: 0.6rem;
   font-size: 1.2rem;
-  color: ${({ theme, black }) => black ? theme.colors.black : theme.colors.white};
+  color: ${({ theme, black }) => (black ? theme.colors.black : theme.colors.white)};
 
   img {
     border-radius: 50%;

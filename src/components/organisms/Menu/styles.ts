@@ -73,7 +73,7 @@ export const Nav = styled.nav`
     align-items: center;
     padding-block: 4rem;
     width: 100%;
-    
+
     &.active {
       top: 5rem;
       left: 0;
