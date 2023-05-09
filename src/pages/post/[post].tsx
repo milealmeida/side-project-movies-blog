@@ -16,12 +16,12 @@ export default function Post() {
 
         <Divider />
 
-        <Badge type="Something Cool" />
+        <Badge type="movies" />
         <Title>{content.title}</Title>
         <Author
           name="Milena Almeida"
           src="https://github.com/milealmeida.png"
-          date="10 de maio, 2023"
+          date="May 10, 2023"
         />
 
         <Content dangerouslySetInnerHTML={{ __html: content.text }} />

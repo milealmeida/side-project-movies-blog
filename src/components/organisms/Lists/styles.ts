@@ -37,6 +37,11 @@ export const Card = styled.div<{bg: string}>`
   justify-content: flex-end;
   padding: 25rem 4rem 4rem;
   cursor: pointer;
+  transition: all 300ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media (max-width: 800px) {
     padding:  8rem 2rem 2rem;
@@ -44,8 +49,10 @@ export const Card = styled.div<{bg: string}>`
 `;
 
 export const CardTitle = styled.h2`
+  text-shadow: 0.4rem 0.3rem 0.5rem rgba(0,0,0,0.9);
   font-size: 2rem;
   color: ${({ theme }) => theme.colors.white};
   margin-block: 2rem;
   height: 5rem;
+  text-transform: capitalize;
 `;

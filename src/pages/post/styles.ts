@@ -14,10 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Divider = styled.div`
-  width: 100%;
-  height: 0.1rem;
-  background-color: ${({ theme }) => theme.colors.white};
-  margin-bottom: 8rem;
+  margin-block: 6rem;
 `;
 
 export const Title = styled.h1`
@@ -47,16 +44,19 @@ export const Content = styled.div`
   img {
     width: 100%;
     height: 50rem;
+    object-fit: cover;
   }
 
   p {
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.6rem;
+    text-align: justify;
   }
 
   span {
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.4rem;
+    font-style: italic;
   }
 
   @media (max-width: 1250px) {

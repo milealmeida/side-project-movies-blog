@@ -56,6 +56,7 @@ export const Box = styled.div`
 `;
 
 export const Title = styled.h1`
+  text-shadow: 0.4rem 0.3rem 0.5rem rgba(0,0,0,0.9);
   color: ${({ theme }) => theme.colors.white};
   font-size: 2.4rem;
   height: 9rem;
