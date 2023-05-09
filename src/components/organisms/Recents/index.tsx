@@ -1,10 +1,13 @@
+import { BadgeProps } from 'utils/getFormattedBadge';
+
 import { Badge } from '../../atoms/Badge';
 import { Author } from '../../atoms/Author';
+
+import { content } from './content';
 
 import {
   Box, Card, Cards, Section, Title, Wrapper,
 } from './styles';
-import { content } from './content';
 
 export function Recents() {
   return (
@@ -13,7 +16,7 @@ export function Recents() {
         <Cards>
           {content.map((item) => (
             <Card key={item.id} bg={item.image}>
-              <Badge type={item.badge} />
+              <Badge type={item.badge as BadgeProps} />
 
               <Box>
                 <Title>{item.title}</Title>

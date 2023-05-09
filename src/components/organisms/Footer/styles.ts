@@ -5,8 +5,12 @@ export const Container = styled.footer`
   background-color: ${({ theme }) => theme.colors.gray[800]};
   padding-block: 10rem;
 
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     padding: 5rem 2rem;
+  }
+
+  @media (max-width: 1250px) {
+    padding-inline: 2rem;
   }
 `;
 
@@ -27,7 +31,7 @@ export const Wrapper = styled.div`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 950px) {
     flex-direction: column;
     gap: 2rem;
     padding-bottom: 5rem;

@@ -1,6 +1,9 @@
-import { Badge } from 'components/atoms/Badge';
-import { Author } from 'components/atoms/Author';
+import { Badge, Author } from 'components';
+
+import { BadgeProps } from 'utils/getFormattedBadge';
+
 import { content } from './content';
+
 import {
   Card, CardTitle, Cards, Section, Title,
 } from './styles';
@@ -17,7 +20,7 @@ export function Lists({ id }: Props) {
       <Cards>
         {content.map((item) => (
           <Card key={item.id} bg={item.image}>
-            <Badge type={item.badge} />
+            <Badge type={item.badge as BadgeProps} />
             <CardTitle>{item.title}</CardTitle>
             <Author
               date={item.author.date}

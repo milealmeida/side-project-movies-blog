@@ -6,8 +6,11 @@ export const Section = styled.section`
   width: 100%;
 
   @media (max-width: 800px) {
-    padding-inline: 2rem;
     top: 40rem;
+  }
+
+  @media (max-width: 1250px) {
+    padding-inline: 2rem;
   }
 `;
 

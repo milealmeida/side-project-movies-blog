@@ -7,6 +7,9 @@ export const Section = styled.section`
 
   @media (max-width: 800px) {
     margin-top: 120rem;
+  }
+
+  @media (max-width: 1250px) {
     padding-inline: 2rem;
   }
 `;
@@ -19,6 +22,9 @@ export const Box = styled.div`
 
   @media (max-width: 800px) {
     gap: 8rem;
+  }
+
+  @media (max-width: 1250px) {
     justify-content: center;
   }
 `;
@@ -26,7 +32,7 @@ export const Box = styled.div`
 export const Title = styled.h1`
   font-size: 3rem;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1250px) {
     text-align: center;
   }
 `;

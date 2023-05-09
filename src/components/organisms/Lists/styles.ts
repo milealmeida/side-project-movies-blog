@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   width: 100%;
-  background-color: #474a51;
+  background-color: ${({ theme }) => theme.colors.gray[450]};
   padding: 12rem 4rem 4rem;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1250px) {
     padding-inline: 2rem;
   }
 `;
@@ -19,12 +19,17 @@ export const Title = styled.h1`
 
 export const Cards = styled.div`
   max-width: 120rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-inline: auto;
   gap: 4rem;
 
+  @media (max-width: 1250px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (max-width: 800px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 `;
 

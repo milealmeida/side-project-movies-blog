@@ -8,7 +8,7 @@ export const Section = styled.section`
   height: 60rem;
   z-index: -1;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1250px) {
     padding-inline: 2rem;
   }
 `;
