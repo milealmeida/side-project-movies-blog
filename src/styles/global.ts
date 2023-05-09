@@ -11,9 +11,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     scroll-behavior: smooth !important;
   }
-  
+
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-base), sans-serif;
     font-style: normal;
   }
 
