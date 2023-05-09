@@ -23,15 +23,20 @@ Utilizando as seguintes tecnologias:
   ```bash
     # Clonar o repositório
     $ git clone https://github.com/milealmeida/side-project-movies-blog
+
     # Entrar no diretório
     $ cd {nomepasta}
+
     # Para abrir o Visual Studio Code
     $ code .
+
     # Instalar o projeto (digitar no terminal)
     $ yarn
+
     # Rodar o projeto na máquina (digitar no terminal)
     $ yarn dev
-    # isso fará com que o projeto rode na `porta
+
+    # Isso fará com que o projeto rode na porta
     http://localhost:3000/
 ```
 
