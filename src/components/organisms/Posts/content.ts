@@ -27,7 +27,7 @@ export const content = [
     id: 3,
     image: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     alt: 'Alt cinema',
-    badge: 'Beauty',
+    badge: 'beauty',
     title: 'Excepturi optio expedita ad facilis odio sequi',
     author: {
       name: 'Mateus Silva',

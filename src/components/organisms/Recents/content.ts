@@ -13,7 +13,7 @@ export const content = [
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-    badge: 'taylor swift',
+    badge: 'taylorSwift',
     title: 'Taylor Swift announces Speak Now TV',
     author: {
       name: 'Milena Almeida',
@@ -24,7 +24,7 @@ export const content = [
   {
     id: 3,
     image: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
-    badge: 'movie podcast',
+    badge: 'moviePodcast',
     title: 'Lorem ipsum dolor sit',
     author: {
       name: 'Mateus Silva',

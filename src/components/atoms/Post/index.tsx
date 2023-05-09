@@ -1,3 +1,4 @@
+import { BadgeProps } from 'utils/getFormattedBadge';
 import { Author } from '../Author';
 import { Badge } from '../Badge';
 
@@ -9,7 +10,7 @@ type Props = {
   src: string;
   alt: string;
   title: string;
-  badge: string;
+  badge: BadgeProps;
   author: {
     name: string;
     image: string;
