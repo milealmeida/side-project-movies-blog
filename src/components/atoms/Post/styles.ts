@@ -34,6 +34,8 @@ export const Box = styled.div`
   flex-direction: column;
   gap: 1rem;
   width: 100%;
+  height: 100%;
+  justify-content: space-between;
 `;
 
 export const Title = styled.h1`

@@ -64,6 +64,10 @@ export const Title = styled.h1`
   font-size: 2.4rem;
   height: 9rem;
 
+  @media (max-width: 1150px) {
+    height: 15rem;
+  }
+
   @media (max-width: 800px) {
     font-size: 2rem;
     height: 5rem;

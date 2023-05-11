@@ -1,6 +1,7 @@
 # Side Project Movie Time
 
 <strong>Link para o site em produção:</strong>
+https://side-project-movies-blog.vercel.app/
 
 <img src="./.github/print.png" />
 

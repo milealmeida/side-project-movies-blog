@@ -2,6 +2,7 @@ import { Badge, Author } from 'components';
 
 import { BadgeProps } from 'utils/getFormattedBadge';
 
+import { getShortTitle } from 'utils/getShortTitle';
 import { content } from './content';
 
 import {
@@ -21,7 +22,7 @@ export function Lists({ id }: Props) {
         {content.map((item) => (
           <Card key={item.id} bg={item.image}>
             <Badge type={item.badge as BadgeProps} />
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle>{getShortTitle(item.title)}</CardTitle>
             <Author
               date={item.author.date}
               name={item.author.name}

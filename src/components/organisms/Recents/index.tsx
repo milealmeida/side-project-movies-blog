@@ -1,5 +1,6 @@
 import { BadgeProps } from 'utils/getFormattedBadge';
 
+import { getShortTitle } from 'utils/getShortTitle';
 import { Badge } from '../../atoms/Badge';
 import { Author } from '../../atoms/Author';
 
@@ -19,7 +20,7 @@ export function Recents() {
               <Badge type={item.badge as BadgeProps} />
 
               <Box>
-                <Title>{item.title}</Title>
+                <Title>{getShortTitle(item.title)}</Title>
                 <Author
                   src={item.author.image}
                   name={item.author.name}

@@ -1,4 +1,5 @@
 import { BadgeProps } from 'utils/getFormattedBadge';
+import { getShortTitle } from 'utils/getShortTitle';
 import { Author } from '../Author';
 import { Badge } from '../Badge';
 
@@ -34,7 +35,7 @@ export function Post({
 
       <Box>
         <Badge type={badge} />
-        <Title>{title}</Title>
+        <Title>{getShortTitle(title)}</Title>
         <Author
           black
           date={author.date}
