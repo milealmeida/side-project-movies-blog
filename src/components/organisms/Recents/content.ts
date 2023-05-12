@@ -1,6 +1,7 @@
 export const content = [
   {
     id: 1,
+    slug: 1,
     image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1759&q=80',
     badge: 'health',
     title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
@@ -12,6 +13,7 @@ export const content = [
   },
   {
     id: 2,
+    slug: 2,
     image: 'https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
     badge: 'taylorSwift',
     title: 'Taylor Swift announces Speak Now TV',
@@ -23,6 +25,7 @@ export const content = [
   },
   {
     id: 3,
+    slug: 3,
     image: 'https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     badge: 'moviePodcast',
     title: 'Lorem ipsum dolor sit',

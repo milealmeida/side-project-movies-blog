@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { BadgeProps } from 'utils/getFormattedBadge';
 
 import { Post } from '../../atoms/Post';
@@ -17,14 +19,16 @@ export function Posts({ id }: Props) {
 
       <Box>
         {content.map((item) => (
-          <Post
-            key={item.id}
-            src={item.image}
-            alt={item.alt}
-            badge={item.badge as BadgeProps}
-            title={item.title}
-            author={item.author}
-          />
+          <Link href={`post/${item.slug}`}>
+            <Post
+              key={item.id}
+              src={item.image}
+              alt={item.alt}
+              badge={item.badge as BadgeProps}
+              title={item.title}
+              author={item.author}
+            />
+          </Link>
         ))}
       </Box>
     </Section>

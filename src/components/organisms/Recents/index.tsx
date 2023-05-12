@@ -1,6 +1,8 @@
-import { BadgeProps } from 'utils/getFormattedBadge';
+import Link from 'next/link';
 
+import { BadgeProps } from 'utils/getFormattedBadge';
 import { getShortTitle } from 'utils/getShortTitle';
+
 import { Badge } from '../../atoms/Badge';
 import { Author } from '../../atoms/Author';
 
@@ -16,18 +18,20 @@ export function Recents() {
       <Wrapper>
         <Cards>
           {content.map((item) => (
-            <Card key={item.id} bg={item.image}>
-              <Badge type={item.badge as BadgeProps} />
+            <Link href={`post/${item.id}`}>
+              <Card key={item.id} bg={item.image}>
+                <Badge type={item.badge as BadgeProps} />
 
-              <Box>
-                <Title>{getShortTitle(item.title)}</Title>
-                <Author
-                  src={item.author.image}
-                  name={item.author.name}
-                  date={item.author.date}
-                />
-              </Box>
-            </Card>
+                <Box>
+                  <Title>{getShortTitle(item.title)}</Title>
+                  <Author
+                    src={item.author.image}
+                    name={item.author.name}
+                    date={item.author.date}
+                  />
+                </Box>
+              </Card>
+            </Link>
           ))}
         </Cards>
       </Wrapper>
