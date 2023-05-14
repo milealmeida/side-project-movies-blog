@@ -61,3 +61,8 @@ export const CardTitle = styled.h2`
   height: 5rem;
   text-transform: capitalize;
 `;
+
+export const Badges = styled.div`
+  display: flex;
+  gap: 1rem;
+`;

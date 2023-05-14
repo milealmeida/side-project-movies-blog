@@ -1,8 +1,8 @@
 export type BadgeProps =
 'world' |
-'health' |
-'taylorSwift' |
-'moviePodcast' |
+'cat' |
+'dog' |
+'pet' |
 'podcast' |
 'movies' |
 'beauty' |
@@ -14,57 +14,57 @@ export type BadgeProps =
 export const getFormattedBadge = (type: BadgeProps) => {
   const badgeTypes = {
     world: {
-      title: 'world',
+      name: 'world',
       color: '#003d80',
     },
 
-    health: {
-      title: 'health',
+    cat: {
+      name: 'cat',
       color: '#0096c7',
     },
 
-    taylorSwift: {
-      title: 'taylor swift',
+    dog: {
+      name: 'dog',
       color: '#7f2d7a',
     },
 
-    moviePodcast: {
-      title: 'movie podcast',
+    pet: {
+      name: 'pet',
       color: '#15312c',
     },
 
     podcast: {
-      title: 'podcast',
+      name: 'podcast',
       color: '#FFC00E',
     },
 
     movies: {
-      title: 'movies',
+      name: 'movies',
       color: '#9d0208',
     },
 
     beauty: {
-      title: 'beauty',
+      name: 'beauty',
       color: '#ff0a54',
     },
 
     games: {
-      title: 'games',
+      name: 'games',
       color: '#343a40',
     },
 
     comics: {
-      title: 'comics',
+      name: 'comics',
       color: '#dd0426',
     },
 
     books: {
-      title: 'books',
+      name: 'books',
       color: '#99582a',
     },
 
     travel: {
-      title: 'travel',
+      name: 'travel',
       color: '#fb5607',
     },
   };

@@ -1,46 +1,54 @@
-import { BadgeProps } from 'utils/getFormattedBadge';
 import { getShortTitle } from 'utils/getShortTitle';
 import { Author } from '../Author';
 import { Badge } from '../Badge';
 
 import {
-  Container, Image, Box, Title,
+  Container, Image, Box, Title, Badges,
 } from './styles';
 
 type Props = {
   src: string;
-  alt: string;
   title: string;
-  badge: BadgeProps;
+  badges: {
+    id: string;
+    name: string;
+    color: string;
+  }[];
+  date: string;
   author: {
     name: string;
-    image: string;
-    date: string;
+    avatar_url: string;
   }
 };
 
 export function Post({
   src,
-  alt,
   title,
-  badge,
+  badges,
   author,
+  date,
 }: Props) {
   return (
     <Container>
-      <Image
-        src={src}
-        alt={alt}
-      />
+      <Image src={src} />
 
       <Box>
-        <Badge type={badge} />
+        <Badges>
+          {badges.map((badge) => (
+            <Badge
+              key={badge.id}
+              name={badge.name}
+              color={badge.color}
+            />
+          ))}
+        </Badges>
+
         <Title>{getShortTitle(title)}</Title>
         <Author
           black
-          date={author.date}
+          date={date}
           name={author.name}
-          src={author.image}
+          src={author.avatar_url}
         />
       </Box>
     </Container>

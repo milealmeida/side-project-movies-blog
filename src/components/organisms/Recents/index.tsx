@@ -1,38 +1,50 @@
 import Link from 'next/link';
 
-import { BadgeProps } from 'utils/getFormattedBadge';
 import { getShortTitle } from 'utils/getShortTitle';
+
+import { BlogPost } from 'types';
 
 import { Badge } from '../../atoms/Badge';
 import { Author } from '../../atoms/Author';
 
-import { content } from './content';
-
 import {
+  Badges,
   Box, Card, Cards, Section, Title, Wrapper,
 } from './styles';
 
-export function Recents() {
+type Props = {
+  posts: BlogPost[]
+}
+
+export function Recents({ posts }: Props) {
   return (
     <Section>
       <Wrapper>
         <Cards>
-          {content.map((item) => (
-            <Link href={`post/${item.id}`}>
-              <Card key={item.id} bg={item.image}>
-                <Badge type={item.badge as BadgeProps} />
+          {posts.map((post) => (
+            <Link href={`/post/${post.slug}`}>
+              <Card key={post.id} bg={post.cover}>
+                <Badges>
+                  {post.tags.map((badge) => (
+                    <Badge
+                      key={badge.id}
+                      name={badge.name}
+                      color={badge.color}
+                    />
+                  ))}
+                </Badges>
 
                 <Box>
-                  <Title>{getShortTitle(item.title)}</Title>
+                  <Title>{getShortTitle(post.title)}</Title>
                   <Author
-                    src={item.author.image}
-                    name={item.author.name}
-                    date={item.author.date}
+                    src={post.author.avatar_url}
+                    name={post.author.name}
+                    date={post.date}
                   />
                 </Box>
               </Card>
             </Link>
-          ))}
+          )).slice(0, 3)}
         </Cards>
       </Wrapper>
     </Section>

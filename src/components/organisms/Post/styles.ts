@@ -33,6 +33,7 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 4rem;
   margin-block: 4rem;
+  color: ${({ theme }) => theme.colors.white};
 
   div {
     display: flex;

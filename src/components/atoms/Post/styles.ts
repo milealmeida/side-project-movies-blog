@@ -4,10 +4,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
-  max-width: 50rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
   width: 100%;
+  max-width: 50rem;
 
   &:hover {
     transform: scale(1.05);
@@ -21,7 +21,7 @@ export const Container = styled.div`
 export const Image = styled.img`
   object-fit: cover;
   width: 13rem;
-  height: 100%;
+  height: 13rem;
 
   @media (max-width: 800px) {
     width: 100%;
@@ -41,4 +41,9 @@ export const Box = styled.div`
 export const Title = styled.h1`
   font-size: 1.8rem;
   text-transform: capitalize;
+`;
+
+export const Badges = styled.div`
+  display: flex;
+  gap: 1rem;
 `;

@@ -19,6 +19,13 @@ export const Box = styled.div`
   flex-wrap: wrap;
   gap: 4rem 10rem;
   margin-top: 4rem;
+  width: 100%;
+
+  a {
+    width: 100%;
+    max-width: 50rem;
+    color: ${({ theme }) => theme.colors.black};
+  }
 
   @media (max-width: 800px) {
     gap: 8rem;

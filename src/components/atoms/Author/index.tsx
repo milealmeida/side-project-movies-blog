@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { FiClock } from 'react-icons/fi';
 
+import { format } from 'date-fns';
+
 import { Box, Container } from './styles';
 
 type Props = {
@@ -20,17 +22,18 @@ export function Author({
     <Container>
       <Box black={black}>
         <Image
-          src={src}
-          alt={`Foto de perfil ${name}`}
+          src={src ?? '/img/svg/user.svg'}
+          alt={`Photo of ${name}`}
           width={25}
           height={25}
+          style={{ objectFit: 'cover' }}
         />
-        <strong>{name}</strong>
+        <strong>{name ?? 'Author'}</strong>
       </Box>
 
       <Box black={black}>
         <FiClock size={15} />
-        <strong>{date}</strong>
+        <strong>{format(new Date(date), 'MMM dd, yyyy')}</strong>
       </Box>
     </Container>
   );

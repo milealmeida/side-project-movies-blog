@@ -23,6 +23,10 @@ export const Cards = styled.div`
   display: flex;
   gap: 4rem;
 
+  a {
+    width: 100%;
+  }
+
   @media (max-width: 800px) {
     flex-direction: column;
     align-items: center;
@@ -72,4 +76,9 @@ export const Title = styled.h1`
     font-size: 2rem;
     height: 5rem;
   }
+`;
+
+export const Badges = styled.div`
+  display: flex;
+  gap: 1rem;
 `;

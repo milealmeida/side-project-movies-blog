@@ -2,38 +2,48 @@ import Link from 'next/link';
 
 import { Badge, Author } from 'components';
 
-import { BadgeProps } from 'utils/getFormattedBadge';
 import { getShortTitle } from 'utils/getShortTitle';
 
-import { content } from './content';
+import { BlogPost } from 'types';
 
 import {
+  Badges,
   Card, CardTitle, Cards, Section, Title,
 } from './styles';
 
 type Props = {
   id: string;
+  posts: BlogPost[];
 };
 
-export function Lists({ id }: Props) {
+export function Lists({ id, posts }: Props) {
   return (
     <Section id={id}>
       <Title>Lists</Title>
 
       <Cards>
-        {content.map((item) => (
+        {posts.map((item) => (
           <Link href={`post/${item.slug}`}>
-            <Card key={item.id} bg={item.image}>
-              <Badge type={item.badge as BadgeProps} />
+            <Card key={item.id} bg={item.cover}>
+              <Badges>
+                {item.tags.map((badge) => (
+                  <Badge
+                    key={badge.id}
+                    name={badge.name}
+                    color={badge.color}
+                  />
+                ))}
+              </Badges>
+
               <CardTitle>{getShortTitle(item.title)}</CardTitle>
               <Author
-                date={item.author.date}
+                date={item.date}
                 name={item.author.name}
-                src={item.author.image}
+                src={item.author.avatar_url}
               />
             </Card>
           </Link>
-        ))}
+        )).slice(3, 6)}
       </Cards>
     </Section>
   );
