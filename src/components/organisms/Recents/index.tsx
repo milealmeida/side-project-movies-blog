@@ -4,6 +4,7 @@ import { getShortTitle } from 'utils/getShortTitle';
 
 import { BlogPost } from 'types';
 
+import { BadgeProps } from 'utils/getFormattedBadge';
 import { Badge } from '../../atoms/Badge';
 import { Author } from '../../atoms/Author';
 
@@ -28,8 +29,7 @@ export function Recents({ posts }: Props) {
                   {post.tags.map((badge) => (
                     <Badge
                       key={badge.id}
-                      name={badge.name}
-                      color={badge.color}
+                      type={badge.name as BadgeProps}
                     />
                   ))}
                 </Badges>

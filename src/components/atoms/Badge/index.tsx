@@ -1,13 +1,12 @@
-// import { BadgeProps, getFormattedBadge } from 'utils/getFormattedBadge';
+import { BadgeProps, getFormattedBadge } from 'utils/getFormattedBadge';
 import { Wrapper } from './styles';
 
 type Props = {
-  name: string;
-  color: string;
+  type: BadgeProps
 };
 
-export function Badge({ name, color }: Props) {
-  // const { name } = getFormattedBadge(type);
+export function Badge({ type }: Props) {
+  const { name, color } = getFormattedBadge(type);
 
   return (
     <Wrapper color={color}>

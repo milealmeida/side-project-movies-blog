@@ -6,6 +6,7 @@ import { getShortTitle } from 'utils/getShortTitle';
 
 import { BlogPost } from 'types';
 
+import { BadgeProps } from 'utils/getFormattedBadge';
 import {
   Badges,
   Card, CardTitle, Cards, Section, Title,
@@ -29,8 +30,7 @@ export function Lists({ id, posts }: Props) {
                 {item.tags.map((badge) => (
                   <Badge
                     key={badge.id}
-                    name={badge.name}
-                    color={badge.color}
+                    type={badge.name as BadgeProps}
                   />
                 ))}
               </Badges>

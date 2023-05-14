@@ -4,13 +4,15 @@ import {
   Menu, Author, Badge, Footer,
 } from 'components';
 
+import { BlogPost } from 'types';
+
 import {
   Container, Content, Divider, Title, Wrapper,
 } from './styles';
 
 type Props = {
-  post: any;
-  content: any;
+  post: BlogPost;
+  content: string;
 }
 
 export function PostTemplate({ post, content }: Props) {

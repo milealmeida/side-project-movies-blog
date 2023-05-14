@@ -8,7 +8,6 @@ export type BlogPost = {
   tags: {
     id: string;
     name: string;
-    color: string;
   }[];
   description: string;
   date: string;

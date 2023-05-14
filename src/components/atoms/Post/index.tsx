@@ -1,4 +1,5 @@
 import { getShortTitle } from 'utils/getShortTitle';
+import { BadgeProps } from 'utils/getFormattedBadge';
 import { Author } from '../Author';
 import { Badge } from '../Badge';
 
@@ -12,7 +13,6 @@ type Props = {
   badges: {
     id: string;
     name: string;
-    color: string;
   }[];
   date: string;
   author: {
@@ -37,8 +37,7 @@ export function Post({
           {badges.map((badge) => (
             <Badge
               key={badge.id}
-              name={badge.name}
-              color={badge.color}
+              type={badge.name as BadgeProps}
             />
           ))}
         </Badges>

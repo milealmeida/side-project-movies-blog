@@ -7,7 +7,7 @@ https://side-project-movies-blog.vercel.app/
 
 ## 💻 Sobre o projeto
 
-Projeto desenvolvido com o propósito de praticar e aperfeiçoar os conhecimentos em Next, utilizando as novas atualizações do framework para estudo. Usando como base o layout de um blog.
+Projeto desenvolvido com o propósito de praticar e aperfeiçoar os conhecimentos em Next, utilizando as novas atualizações do framework para estudo e integrando com a API do Notion para usar como CMS na criação dos Posts. Usando como base o layout de um blog.
 
 Utilizando as seguintes tecnologias:
   - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML);
@@ -40,5 +40,9 @@ Utilizando as seguintes tecnologias:
     # Isso fará com que o projeto rode na porta
     http://localhost:3000/
 ```
+
+  ### 🏁 Para clonar o Notion
+
+  [Clique aqui](https://milealmeida.notion.site/82b42eec983240f6ad8711664c9ecd60?v=ded717aa61554ebe809664c9834b4c5d) para clonar o template do Notion.
 
   Desenvolvido com 💙 por Milena Almeida.
