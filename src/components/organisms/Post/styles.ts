@@ -28,6 +28,12 @@ export const Title = styled.h1`
   }
 `;
 
+export const Description = styled.p`
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 2rem;
+  margin-bottom: 4rem;
+`;
+
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -48,6 +54,11 @@ export const Content = styled.div`
     object-fit: cover;
   }
 
+  h2 {
+    color: ${({ theme }) => theme.colors.white};
+    font-size: 2rem;
+  }
+
   p {
     color: ${({ theme }) => theme.colors.white};
     font-size: 1.6rem;
@@ -63,4 +74,9 @@ export const Content = styled.div`
   @media (max-width: 1250px) {
     padding-inline: 2rem;
   }
+`;
+
+export const Badges = styled.div`
+  display: flex;
+  gap: 1rem;
 `;

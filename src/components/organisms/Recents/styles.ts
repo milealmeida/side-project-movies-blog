@@ -39,6 +39,7 @@ export const Card = styled.div<{bg: string}>`
   justify-content: space-between;
   gap: 10rem;
   background: url(${({ bg }) => bg}) no-repeat center;
+  background-color: ${({ theme }) => theme.colors.gray[100]};
   background-size: cover;
   max-width: 40rem;
   width: 100%;
@@ -53,6 +54,8 @@ export const Card = styled.div<{bg: string}>`
   @media (max-width: 800px) {
     padding: 2rem;
     gap: 4rem;
+    margin-inline: auto;
+    max-width: 100%;
   }
 `;
 

@@ -1,5 +1,6 @@
-import { getShortTitle } from 'utils/getShortTitle';
 import { BadgeProps } from 'utils/getFormattedBadge';
+import { getFormattedCapitalizeName, getShortTitle } from 'utils';
+
 import { Author } from '../Author';
 import { Badge } from '../Badge';
 
@@ -28,6 +29,10 @@ export function Post({
   author,
   date,
 }: Props) {
+  const postTitleFormatted = getShortTitle(getFormattedCapitalizeName(
+    title.toLowerCase(),
+  ));
+
   return (
     <Container>
       <Image src={src} />
@@ -39,10 +44,10 @@ export function Post({
               key={badge.id}
               type={badge.name as BadgeProps}
             />
-          ))}
+          )).slice(0, 2)}
         </Badges>
 
-        <Title>{getShortTitle(title)}</Title>
+        <Title>{postTitleFormatted}</Title>
         <Author
           black
           date={date}

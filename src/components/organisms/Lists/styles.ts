@@ -43,6 +43,7 @@ export const Card = styled.div<{bg: string}>`
   padding: 25rem 4rem 4rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  background-color: ${({ theme }) => theme.colors.gray[100]};
 
   &:hover {
     transform: scale(1.05);
@@ -59,7 +60,6 @@ export const CardTitle = styled.h2`
   color: ${({ theme }) => theme.colors.white};
   margin-block: 2rem;
   height: 5rem;
-  text-transform: capitalize;
 `;
 
 export const Badges = styled.div`

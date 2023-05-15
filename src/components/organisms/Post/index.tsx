@@ -6,8 +6,11 @@ import {
 
 import { BlogPost } from 'types';
 
+import { getFormattedCapitalizeName } from 'utils';
+import { BadgeProps } from 'utils/getFormattedBadge';
+
 import {
-  Container, Content, Divider, Title, Wrapper,
+  Badges, Container, Content, Description, Divider, Title, Wrapper,
 } from './styles';
 
 type Props = {
@@ -23,12 +26,23 @@ export function PostTemplate({ post, content }: Props) {
 
         <Divider />
 
-        <Badge type="movies" />
-        <Title>{post.title}</Title>
+        <Badges>
+          {post.tags.map((item) => (
+            <Badge
+              key={item.id}
+              type={item.name as BadgeProps}
+            />
+          )).slice(0, 2)}
+        </Badges>
+
+        <Title>{getFormattedCapitalizeName(post.title.toLowerCase())}</Title>
+
+        <Description>{post.description}</Description>
+
         <Author
-          name="Milena Almeida"
-          src="https://github.com/milealmeida.png"
-          date="May 10, 2023"
+          name={post.author.name}
+          src={post.author.avatar_url}
+          date={post.date}
         />
 
         <Content>

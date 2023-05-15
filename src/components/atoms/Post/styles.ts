@@ -22,6 +22,7 @@ export const Image = styled.img`
   object-fit: cover;
   width: 13rem;
   height: 13rem;
+  background-color: ${({ theme }) => theme.colors.gray[100]};
 
   @media (max-width: 800px) {
     width: 100%;
@@ -40,7 +41,6 @@ export const Box = styled.div`
 
 export const Title = styled.h1`
   font-size: 1.8rem;
-  text-transform: capitalize;
 `;
 
 export const Badges = styled.div`

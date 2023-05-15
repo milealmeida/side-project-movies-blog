@@ -2,11 +2,11 @@ import Link from 'next/link';
 
 import { Badge, Author } from 'components';
 
-import { getShortTitle } from 'utils/getShortTitle';
-
 import { BlogPost } from 'types';
 
 import { BadgeProps } from 'utils/getFormattedBadge';
+import { getFormattedCapitalizeName, getShortTitle } from 'utils';
+
 import {
   Badges,
   Card, CardTitle, Cards, Section, Title,
@@ -23,27 +23,33 @@ export function Lists({ id, posts }: Props) {
       <Title>Lists</Title>
 
       <Cards>
-        {posts.map((item) => (
-          <Link href={`post/${item.slug}`}>
-            <Card key={item.id} bg={item.cover}>
-              <Badges>
-                {item.tags.map((badge) => (
-                  <Badge
-                    key={badge.id}
-                    type={badge.name as BadgeProps}
-                  />
-                ))}
-              </Badges>
+        {posts.map((item) => {
+          const postTitleFormatted = getShortTitle(getFormattedCapitalizeName(
+            item.title.toLowerCase(),
+          ));
 
-              <CardTitle>{getShortTitle(item.title)}</CardTitle>
-              <Author
-                date={item.date}
-                name={item.author.name}
-                src={item.author.avatar_url}
-              />
-            </Card>
-          </Link>
-        )).slice(3, 6)}
+          return (
+            <Link href={`post/${item.slug}`}>
+              <Card key={item.id} bg={item.cover}>
+                <Badges>
+                  {item.tags.map((badge) => (
+                    <Badge
+                      key={badge.id}
+                      type={badge.name as BadgeProps}
+                    />
+                  )).slice(0, 2)}
+                </Badges>
+
+                <CardTitle>{postTitleFormatted}</CardTitle>
+                <Author
+                  date={item.date}
+                  name={item.author.name}
+                  src={item.author.avatar_url}
+                />
+              </Card>
+            </Link>
+          );
+        }).slice(3, 6)}
       </Cards>
     </Section>
   );
